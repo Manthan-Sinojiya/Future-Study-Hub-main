@@ -1,0 +1,112 @@
+/* CSS for Watch Video Page */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .video-container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .video-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .video-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0056b3;
+  }
+  
+  .video-description {
+    margin-bottom: 25px;
+    font-size: 16px;
+    color: #6c757d;
+  }
+  
+  .video-player {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    background: #000;
+    overflow: hidden;
+  }
+  
+  /* Hide native video controls and customize progress bar for a cleaner look */
+  .video-player video::-webkit-controls-overlay {
+    display: none;
+  }
+  
+  .video-player video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+  }
+  
+  .progress:hover .progress-fill {
+    background-color: #007bff;
+  }
+  
+  .progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+  
+  .btn-back {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px; /* Add padding for better spacing */
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    border: 1px solid; /* Add a solid border */
+    border-radius: 4px; /* Maintain rounded corners */
+    cursor: pointer; /* Indicate clickable button */
+    text-decoration: none; /* Remove underline from text */
+    font-size: 16px; /* Set font size */
+    text-align: center; /* Center text within the button */
+    transition: all 0.3s ease; /* Add smooth transitions on hover */
+  }
+  
+  .btn-back:hover { /* Styles for hover state */
+    background-color: #0067cc; /* Change background color on hover */
+    border-color: #0067cc; /* Change border color on hover */
+  }
+  
+  .btn-back:disabled { /* Styles for disabled button (optional) */
+    opacity: 0.5; /* Reduce opacity to indicate disabled state */
+    cursor: default; /* Remove pointer cursor for disabled button */
+  }
+  
+  /* Add media query for smaller screens (optional) */
+  @media (max-width: 768px) {
+    .btn-back {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  

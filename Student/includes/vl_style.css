@@ -1,0 +1,92 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.video-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.video-table th,
+.video-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.video-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    cursor: pointer;
+}
+.video-table tbody tr .video-item:hover {
+    background-color: #f9f9f9;
+}
+.video-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.video-item:hover {
+    background-color: #f0f0f0;
+}
+.video-details {
+    display: none;
+}
+.video-list-table {
+    width: 100%;
+    border-collapse: collapse;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.video-list-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+.video-list-table th,
+.video-list-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.video-list-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}
+.suggestion-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+}
+.suggestion-btn:hover {
+    text-decoration: underline;
+}
+.badge {
+    margin-left: 5px;
+}
+header, footer {
+    margin: 0;
+    padding: 0;
+}

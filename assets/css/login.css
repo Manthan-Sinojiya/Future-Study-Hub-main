@@ -1,0 +1,181 @@
+body {
+    background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Gradient background */
+    margin: 0;
+    color: #333;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main container styling */
+.main {
+    background: #ffffff;
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 12px 24px rgba(0,0,0,0.6); /* Enhanced shadow */
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+ /* Smooth hover effects */
+}
+
+.mybg,main {
+    background: url(../img/bg-hero.webp)no-repeat fixed 50%;
+}
+
+.main:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3); /* Enhanced shadow on hover */
+}
+.forget{
+	text-align: end;
+}
+/* Header styling */
+h1 {
+    color: #343a40; /* Darker gray color */
+    margin-bottom: 20px;
+	text-align: center;
+}
+h3{
+	text-align: center;
+}
+h1:hover {
+    color: #007bff; /* Change color on hover */
+}
+h3:hover {
+    color: #007bff; /* Change color on hover */
+}
+p.login {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p.login a.login1 {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p.login a.login1:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form labels */
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500; /* Slightly bolder */
+    color: #495057; /* Dark gray color */
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"] {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* More rounded corners */
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff; /* Bootstrap primary color on focus */
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 0 4px rgba(38, 143, 255, 0.25); /* Subtle focus shadow */
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth color and scale transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:active {
+    transform: scale(0.98); /* Slightly shrink button on click */
+}
+
+/* Link styling */
+a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth color and text-shadow transition */
+}
+
+a:hover {
+    color: #0056b3; /* Darker shade on hover */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2); /* Subtle text shadow on hover */
+}
+
+/* Alert message styling */
+.alert {
+    margin-bottom: 20px;
+    border-radius: 8px; /* Rounded corners for alerts */
+    padding: 15px;
+    font-size: 16px;
+    transition: opacity 0.3s ease; /* Smooth fade effect */
+    opacity: 1;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-dismissible {
+    position: relative;
+    padding-right: 35px;
+}
+
+.alert-dismissible .btn-close {
+    position: absolute;
+    top: 0;
+    end: 0;
+    padding: 0.75rem 1.25rem;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    color: #721c24;
+    opacity: 0.5;
+    transition: opacity 0.15s linear;
+}
+
+.alert-dismissible .btn-close:hover {
+    opacity: 1;
+}
+
+/* Custom margin for form elements */
+.wrap {
+    margin-top: 10px;
+	text-align: center;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .main {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
