@@ -9,13 +9,16 @@ session_start();
 
 <head>
 
-    <title>Future Study Hub </title>
     <meta charset="utf-8">
+    <title>Future Study Hub - Best Online IELTS Preparation & Study Resources</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Future Study Hub offers online IELTS classes and resources to help you succeed in your academic and professional pursuits.">
+    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400">
-
     <style>
         .slide-content {
             max-height: 0;
@@ -55,42 +58,42 @@ session_start();
     </section>
 
     <section class="py-5" style="width: 100%; margin: 0; padding: 0;">
-    <div class="container my-5" style="width: 100%; padding: 0;">
-        <div class="row justify-content-center" style="margin: 0;">
-            <div class="col-lg-12" style="width: 100%; padding: 0;">
-                <h4 style="text-align: center;">Notice Board</h4>
-                <hr color="#000" style="width: 100%; margin: 0;" />
-                <marquee 
-                    direction="up" 
-                    onmouseover="this.stop();" 
-                    onmouseout="this.start();" 
-                    style="width: 100%; height: auto; display: block; overflow: hidden;">
-                    <ul style="list-style-type: none; padding: 0; margin: 0;">
-                        <?php 
-                        $sql = "SELECT * from notice";
-                        $query = $dbh->prepare($sql);
-                        $query->execute();
-                        $results = $query->fetchAll(PDO::FETCH_OBJ);
-                        $cnt = 1;
-                        if ($query->rowCount() > 0) {
-                            foreach ($results as $result) { ?>
-                                <li style="display: flex; align-items: center; padding: 5px 0;">
-                                    <span style="margin-right: 10px; color: #000;">&#8226;</span> 
-                                    <a 
-                                        href="notice-details.php?nid=<?php echo htmlentities($result->id); ?>" 
-                                        target="_blank" 
-                                        style="text-decoration: none; display: block; color: #000;">
-                                        <?php echo htmlentities($result->noticeDetails); ?>
-                                    </a>
-                                </li>
+        <div class="container my-5" style="width: 100%; padding: 0;">
+            <div class="row justify-content-center" style="margin: 0;">
+                <div class="col-lg-12" style="width: 100%; padding: 0;">
+                    <h4 style="text-align: center;">Notice Board</h4>
+                    <hr color="#000" style="width: 100%; margin: 0;" />
+                    <marquee
+                        direction="up"
+                        onmouseover="this.stop();"
+                        onmouseout="this.start();"
+                        style="width: 100%; height: auto; display: block; overflow: hidden;">
+                        <ul style="list-style-type: none; padding: 0; margin: 0;">
+                            <?php
+                            $sql = "SELECT * from notice";
+                            $query = $dbh->prepare($sql);
+                            $query->execute();
+                            $results = $query->fetchAll(PDO::FETCH_OBJ);
+                            $cnt = 1;
+                            if ($query->rowCount() > 0) {
+                                foreach ($results as $result) { ?>
+                                    <li style="display: flex; align-items: center; padding: 5px 0;">
+                                        <span style="margin-right: 10px; color: #000;">&#8226;</span>
+                                        <a
+                                            href="notice-details.php?nid=<?php echo htmlentities($result->id); ?>"
+                                            target="_blank"
+                                            style="text-decoration: none; display: block; color: #000;">
+                                            <?php echo htmlentities($result->noticeDetails); ?>
+                                        </a>
+                                    </li>
                             <?php }
-                        } ?>
-                    </ul>
-                </marquee>
+                            } ?>
+                        </ul>
+                    </marquee>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section class="usp">
         <div class="container">
